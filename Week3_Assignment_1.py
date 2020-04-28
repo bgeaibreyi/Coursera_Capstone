@@ -32,7 +32,7 @@ df_toronto = df_toronto[df_toronto.Borough != 'Not assigned']
 df_toronto['Neighborhood'] = df_toronto['Neighborhood'].str.replace('/', ',')
 #Replace any empty cell with values from 'Borough'
 df_toronto.Neighborhood.fillna(df_toronto.Borough, inplace=True)
-
+df_toronto.shape
 
 # In[ ]:
 
